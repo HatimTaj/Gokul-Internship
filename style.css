@@ -8,7 +8,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content:space-between;
-    background-color: dodgerblue;
+    background-color: #0a2647;
     height: 50px;
     padding: 10px 20px;
     border-radius: 10px;
@@ -16,14 +16,31 @@ nav{
 .logo{
     height: 40px;
     background-color: white;
-    border-radius: 10px 10px;
+    border-radius: 8px;
 }
 .icon{
     height: 20px;
     width: 20px;
 }
+.nav-icon{
+    display: flex;
+    gap: 0.5rem;
+}
+.icons
+{
+    background: none;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    padding: 0.5rem;
+    filter: invert(1);
+}
+
 button{
-    background:none;
+    background: none;
     border: 0;
     cursor: pointer;
 }
@@ -38,12 +55,12 @@ button{
     border: none;
     outline: none;
     padding: 5px;
+    width:50em;
 }
 .profile{
     display: flex;
     align-items: center;
-    gap: 10px;
-
+    gap: 1.5rem;
 }
 .profile img{
     height: 40px;
@@ -52,5 +69,6 @@ button{
     cursor: pointer;
 }
 .profile p{
-    color: whitesmoke;
+    color: white;
+
 }
