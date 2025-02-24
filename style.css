@@ -1,0 +1,56 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: deepskyblue;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    background-color: dodgerblue;
+    height: 50px;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.logo{
+    height: 40px;
+    background-color: white;
+    border-radius: 10px 10px;
+}
+.icon{
+    height: 20px;
+    width: 20px;
+}
+button{
+    background:none;
+    border: 0;
+    cursor: pointer;
+}
+.searchBar{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    padding:5px 10px;
+}
+.search{
+    border: none;
+    outline: none;
+    padding: 5px;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+.profile img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.profile p{
+    color: whitesmoke;
+}
