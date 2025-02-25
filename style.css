@@ -26,14 +26,15 @@ nav{
     display: flex;
     gap: 0.5rem;
 }
-.icons
-{
-    background: none;
-    height: 50px;
-    width: 50px;
+.nav-right{
     display: flex;
     align-items: center;
-    justify-content: center;
+    gap: 1.5rem;
+}
+.icons
+{
+    height: 30px;
+    width: 30px;
     border-radius: 4px;
     padding: 0.5rem;
     filter: invert(1);
