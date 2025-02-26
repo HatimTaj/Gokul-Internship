@@ -108,3 +108,19 @@ button{
 
     
 }
+.sideBar{
+    background-color: #0a2647;
+    flex-direction: column;
+    display: flex;    
+    height: 100vh;
+    width: 220px;
+    border-radius: 5px;
+    gap: 10px;
+    align-items: left;
+    color: white;
+    padding: 20px;
+}
+.menu{
+    width: 100%;
+    padding-left: 20px;
+}
