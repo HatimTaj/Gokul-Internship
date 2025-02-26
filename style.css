@@ -81,7 +81,6 @@ button{
     height: 37em;
 }
 .container{
-    width: 250px;
     display: flex;
     gap: 20px;
     padding:10px 0;   
@@ -99,9 +98,13 @@ button{
 .items:hover{
     background-color: rgba(255, 255, 255, 0.1);
 }
-.mainContainer{
-        
-    padding: 10px;
+.days{
     background-color: #0a2647;
+    border-radius: 10px;
+    padding: 10px 10px;
+    display: flex;
+    align-items:center;
+    width: auto;
+
     
 }
