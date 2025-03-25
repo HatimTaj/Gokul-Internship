@@ -1,39 +1,117 @@
-body{
-    margin:10px;
+body {
+    margin: 10px;
     padding: 0;
     box-sizing: border-box;
     background-color: deepskyblue;
     font-family: Arial, Helvetica, sans-serif;
 }
-nav{
+
+nav {
+    position: relative;
     display: flex;
     align-items: center;
-    justify-content:space-between;
+    justify-content: space-between;
     background-color: #0a2647;
     height: 50px;
     padding: 10px 20px;
     border-radius: 10px;
 }
-.logo{
+
+.logo {
+    position: absolute;
     height: 40px;
     background-color: white;
     border-radius: 8px;
 }
-.icon{
+
+.icon {
     height: 20px;
     width: 20px;
 }
-.nav-icon{
+
+.icon1 {
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    cursor: pointer;
     display: flex;
-    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    bottom: 0;
 }
-.nav-right{
+
+.searchButton {
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    cursor: pointer;
+    right: 5px;
+    padding: 0;
+}
+
+button {
+    background: none;
+    border: 0;
+    cursor: pointer;
+}
+
+.searchBar {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    height: 30px;
+    left: 150px;
+    border-radius: 20px;
+
+}
+
+.search {
+    width: 700px;
+    height: 30px;
+    border: none;
+    padding: 0 30px;
+    border-radius: 20px;
+}
+
+.profile {
     display: flex;
     align-items: center;
     gap: 1.5rem;
+
 }
-.icons
-{
+
+.profile img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.profile p {
+    color: white;
+
+}
+
+.nav-icon {
+    position: absolute;
+    display: flex;
+    gap: 0.5rem;
+    right: 0;
+
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    right: 0;
+    gap: 15px;
+    width: 400px;
+}
+
+.icons {
     height: 30px;
     width: 30px;
     border-radius: 4px;
@@ -41,72 +119,48 @@ nav{
     filter: invert(1);
 }
 
-button{
-    background: none;
-    border: 0;
-    cursor: pointer;
-}
-.searchBar{
-    display: flex;
-    align-items: center;
-    background-color: white;
-    border-radius: 20px;
-    padding:5px 10px;
-}
-.search{
-    border: none;
-    outline: none;
-    padding: 5px;
-    width:50em;
-}
-.profile{
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-}
-.profile img{
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    cursor: pointer;
-}
-.profile p{
-    color: white;
 
-}
-.sideBar{
-    background-color: #0a2647;  
+.sideBar {
+    background-color: #0a2647;
     width: 250px;
     border-radius: 10px;
     padding: 20px;
     height: 37em;
 }
-.mainContainer{
+
+.mainContainer {
     display: flex;
     gap: 20px;
-    padding:10px 0;   
+    padding: 10px 0;
+    position: relative;
 }
-.items{
+
+.items {
     color: white;
-    text-decoration:none;
+    text-decoration: none;
     display: flex;
     align-items: center;
-    gap:10px;
+    gap: 10px;
     padding: 10px;
     margin-bottom: 5px;
     border-radius: 5px;
 }
-.items:hover{
+
+.items:hover {
     background-color: rgba(255, 255, 255, 0.1);
 }
-.container{
+
+.container {
     max-width: 800px;
     margin: 20px auto;
-    padding: 20px;
+    padding: 20px 200px;
+    background-color: white;
+    border-radius: 10px;
 
 }
-.days{
-    border:4px, solid,#0a2647; 
+
+.days {
+    border: 4px, solid, #0a2647;
     border-radius: 10px;
     gap: 20px;
     margin-bottom: 40px;
@@ -116,19 +170,353 @@ button{
     width: fit-content;
     margin: 0 auto 40px;
 }
-.days span{
+
+.days span {
     padding: 8px 16px;
     color: #0A2657;
     border-radius: 10px;
     font-size: 16px;
     border: none;
-    background:none;    
+    background: none;
 }
-.days span:hover{
+
+.days span:hover {
     background-color: #0a2647;
     color: white;
 }
-.days span:active{
+
+.days span:active {
     font-weight: bold;
 }
 
+.podium {
+
+    margin: 50px 0;
+
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 100vh;
+}
+
+.rank2 {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    left: 0;
+    width: 18vmin;
+    height: auto;
+}
+
+.crown {
+    width: 40px;
+    height: 40px;
+    margin-top: 5px;
+}
+
+.profileCircle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid white;
+    overflow: hidden;
+    margin-bottom: 10px;
+    border: 2px, solid, #0A2657;
+}
+
+.dot {
+    margin-left: 20px;
+    border: 5px, solid, #0a2647;
+    width: 20px;
+    height: 20px;
+
+}
+
+.profileCircle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.pedestal2 {
+    padding-right: 50px;
+    background-color: coral;
+    border-radius: 10px;
+    width: 8vmin;
+    height:50vmin;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.bottom {
+    display: flex;
+}
+
+.box1 {
+    position: relative;
+    display: flex;
+    width: 1160px;
+}
+
+.question {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    background-color: #0a2647;
+    border-radius: 10px;
+
+}
+
+.q1 {
+    position: absolute;
+    left: 5px;
+    top: 14.2px;
+    color: white;
+    align-items: center;
+}
+
+.box11 {
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.img {
+    width: 20px;
+    height: 20px;
+}
+
+.name {
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.box3 {
+    position: absolute;
+    height: 50px;
+    width: 30px;
+    right: 0;
+}
+
+.exclamation {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    padding-top: 10px;
+    align-items: center;
+}
+
+.box2 {
+    position: absolute;
+    background-color: #0a2647;
+    border-radius: 10px;
+    padding: 10px;
+    height: 380px;
+    top: 60px;
+    left: 20px;
+    color: white;
+    line-height: 30px;
+}
+
+.box21 {
+    position: absolute;
+    bottom: 5px;
+    right: 20px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.l2 {
+    background-color: none;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    bottom: 10px;
+    left: 485px;
+}
+
+.more {
+    background-color: #0a2647;
+    position: absolute;
+    padding: 5px;
+    color: white;
+    bottom: 0;
+    border-radius: 5px;
+    bottom: 130px;
+    left: 556.77px;
+}
+
+.addAns {
+    font-style: italic;
+    font-weight: 200;
+    position: absolute;
+    background-color: #0a2647;
+    color: white;
+    width: 10%;
+    height: 30px;
+    bottom: 10px;
+    left: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* for mobile view */
+@media (max-width: 480px) {
+    nav {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap; /* Allow items to wrap */
+        padding: 10px 15px; /* Reduce padding on mobile */
+    }
+    
+    .searchBar {
+        width: 60%; /* Make flexible */
+        left: 0;
+        margin: 0 10px; /* Add spacing */
+        position: relative; /* Remove absolute positioning */
+        order: 2; /* Change order for mobile */
+        flex-grow: 1; /* Take available space */
+    }
+    
+    .profile {
+        order: 3; /* Move to end */
+        margin-left: auto;
+    }
+    
+    /* Mobile menu toggle (add hamburger icon in HTML) */
+    .menu-toggle {
+        display: none; /* Hidden by default */
+    }
+    .mainContainer {
+        flex-direction: column; /* Stack vertically on mobile */
+    }
+    
+    .sideBar {
+        width: 100%; /* Full width on mobile */
+        height: auto; /* Auto height */
+        margin-bottom: 20px;
+    }
+    .container {
+        max-width: 100%; /* Allow shrinking */
+        padding: 20px 15px; /* Reduce side padding */
+    }
+    
+    .box1 {
+        width: 100%; /* Full width */
+        position: relative;
+    }
+    
+    .question {
+        width: 95%; /* Leave some space */
+        margin: 0 auto; /* Center */
+    }
+    .days {
+        flex-wrap: wrap; /* Allow days to wrap */
+        justify-content: flex-start;
+    }
+    
+    .days span {
+        margin: 5px; /* Add spacing */
+    }
+    
+    .podium {
+        flex-direction: column; /* Stack podium items */
+        align-items: center;
+    }
+    
+    .front {
+        margin: 20px 0;
+        width: 100%; /* Full width */
+    }
+    .logo {
+        height: 35px; /* Reduce size on mobile */
+        position: relative; /* Remove absolute positioning */
+        margin-right: 15px;
+    }
+    
+    .profile img {
+        width: 35px; /* Smaller on mobile */
+        height: 35px;
+    }
+    .search {
+        width: 100%; /* Full width */
+        padding: 0 15px; /* Adjust padding */
+    }
+    
+    .searchButton {
+        right: 10px; /* Position within container */
+    }
+}    
+    
+    @media (max-width: 768px) {
+        body {
+            margin: 5px; /* Reduce body margin */
+        }
+        
+        .nav-right {
+            width: 100%; /* Full width */
+            justify-content: space-between;
+        }
+        
+        .addAns {
+            width: 30%; /* Larger touch target */
+            height: 40px;
+        }
+        .menu-toggle {
+            display: block; /* Show on mobile */
+        }
+        
+        .nav-right {
+            display: none; /* Hide nav items by default */
+            width: 100%;
+            order: 4;
+        }
+        
+        .nav-right.active {
+            display: flex; /* Show when menu is toggled */
+        }
+        
+    }
+    
+    @media (min-width: 992px) {
+    .mainContainer {
+        flex-direction: row; /* Side by side on desktop */
+    }
+    
+    .sideBar {
+        width: 250px; /* Fixed width on desktop */
+        height: 37em;
+    }
+}
+@media (min-width: 768px) {
+    .logo {
+        height: 40px; /* Original size on desktop */
+    }
+    
+    .profile img {
+        width: 40px;
+        height: 40px;
+    }
+    .podium {
+        flex-direction: row; /* Horizontal layout on larger screens */
+    }
+    
+    .front {
+        width: 200px; /* Fixed width only on desktop */
+    }
+   
+}
